@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #ece9e6, #ffffff);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main-container {
+            margin-top: 80px;
+            background-color: #f8f9fa;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .alert {
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .alert:hover {
+            transform: scale(1.05);
+        }
+        .btn {
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .btn i {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container main-container">
+        <div class="text-center">
+            <h2>Response:</h2>
+            <div class="alert alert-info" role="alert">
+                <h4 class="alert-heading">{{ r }}</h4>
+            </div>
+            <form action="/" method="post">
+                <button type="submit" class="btn btn-primary btn-lg">
+                    <i class="fas fa-arrow-left"></i> Back to Main
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

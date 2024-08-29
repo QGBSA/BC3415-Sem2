@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lama Robo Advisor</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #ece9e6, #ffffff);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main-container {
+            margin-top: 80px;
+            background-color: #f8f9fa;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header h2 {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .btn {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-info {
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+        .btn-primary:hover, .btn-info:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .btn i {
+            margin-right: 10px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container main-container">
+        <div class="text-center header">
+            <h2>Welcome to Lama Robo Advisor</h2>
+        </div>
+        <div class="text-center">
+            <div class="form-group">
+                <form action="/financial_FAQ" method="post">
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        <i class="fas fa-question-circle"></i> Financial FAQ
+                    </button>
+                </form>
+            </div>
+            <div class="form-group">
+                <form action="/news" method="get">
+                    <button type="submit" class="btn btn-info btn-lg">
+                        <i class="fas fa-newspaper"></i> Latest News
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
